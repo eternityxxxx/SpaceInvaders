@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Space Invaders
 
 ### Для развертывания
@@ -14,6 +13,3 @@ pip install -r requirements.txt
 ```
 python main.py
 ```
-=======
-# Space Invaders
->>>>>>> 68692d38d51ec28e42c0a691a3307f9e19247255

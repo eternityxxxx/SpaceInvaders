@@ -16,6 +16,16 @@ LASER_GREEN = pygame.image.load(os.path.join('images/lasers', 'green.png'))
 
 
 class Enemy(characters.GameCharacter):
+    # Свойства, которые нужны для поднятия com сервера
+    # _reg_clsid_ - бесполезный айдишнк, но без него не получится запустить сервер
+    # _reg_desc_ - описание
+    # _reg_зкщпшв_ - progid это имя объекта, к которому мы будем обращаться
+    # _public_methods_ - необязательное свойство, говорит какие методы будут доступны из вне
+    _reg_clsid_ = "{7CC9F362-486D-11D1-BB48-0000E838A65F}"
+    _reg_desc_ = "Python Test COM Server"
+    _reg_progid_ = "Python.TestServer"
+    _public_methods_ = ['move', 'shoot']
+
     TYPE_MAP = {
         'green': (ENEMY_GREEN, LASER_GREEN),
         'red': (ENEMY_RED, LASER_RED),
